@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 54593042}
   - component: {fileID: 54593041}
   - component: {fileID: 54593040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: er
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 99859002}
   - component: {fileID: 99859001}
   - component: {fileID: 99859000}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 101565857}
   - component: {fileID: 101565856}
   - component: {fileID: 101565855}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 116069755}
   - component: {fileID: 116069754}
   - component: {fileID: 116069753}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 134026062}
   - component: {fileID: 134026061}
   - component: {fileID: 134026060}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1234,7 @@ GameObject:
   - component: {fileID: 153207083}
   - component: {fileID: 153207082}
   - component: {fileID: 153207081}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 157257655}
   - component: {fileID: 157257654}
   - component: {fileID: 157257653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -1481,7 +1481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 172870090}
   - component: {fileID: 172870089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1540,7 +1540,7 @@ GameObject:
   - component: {fileID: 177561104}
   - component: {fileID: 177561103}
   - component: {fileID: 177561102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2113,7 +2113,7 @@ GameObject:
   - component: {fileID: 287043644}
   - component: {fileID: 287043643}
   - component: {fileID: 287043642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2389,10 +2389,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff080d3d810dbfe4e8e9cd46029debd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  _mouseSensitivity: 100
-  _playerBody: {fileID: 2099846653}
-  _orientation: {fileID: 259178964}
-  _playerMovement: {fileID: 562177859}
+  mouseSensitivity: 75
+  playerBody: {fileID: 2099846653}
+  orientation: {fileID: 259178964}
+  playerMovement: {fileID: 562177859}
 --- !u!43 &352714734
 Mesh:
   m_ObjectHideFlags: 0
@@ -2582,7 +2582,7 @@ GameObject:
   - component: {fileID: 367953609}
   - component: {fileID: 367953611}
   - component: {fileID: 367953610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2772,7 @@ GameObject:
   - component: {fileID: 392062896}
   - component: {fileID: 392062895}
   - component: {fileID: 392062894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3145,7 +3145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 435482737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3177,7 +3177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437499062}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Buidling (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3227,7 +3227,7 @@ GameObject:
   - component: {fileID: 451419798}
   - component: {fileID: 451419797}
   - component: {fileID: 451419796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3723,7 +3723,7 @@ GameObject:
   - component: {fileID: 469886123}
   - component: {fileID: 469886122}
   - component: {fileID: 469886121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3972,7 +3972,7 @@ GameObject:
   - component: {fileID: 525758178}
   - component: {fileID: 525758177}
   - component: {fileID: 525758176}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4086,7 +4086,7 @@ GameObject:
   - component: {fileID: 542553964}
   - component: {fileID: 542553963}
   - component: {fileID: 542553962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4352,37 +4352,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4cbf09592b397940854ba93aae1f8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  _controller: {fileID: 2099846650}
-  _groundCheck: {fileID: 2118409845}
-  _orientation: {fileID: 259178964}
-  _playerSpeed: 8
-  _sprintSpeed: 12
-  _crouchSpeed: 6
-  _gravity: -19.62
-  _jumpHeight: 3
-  _wallJumpHeight: 3
-  _wallJumpForce: 8
-  _wallJumpForwardForce: 5
-  _groundDistance: 0.2
-  _groundMask:
-    serializedVersion: 2
-    m_Bits: 8
-  _standingHeight: 3.4
-  _crouchingHeight: 1.6
-  _wallRunMask:
-    serializedVersion: 2
-    m_Bits: 64
-  _wallCheckDistance: 1
-  _wallRunSpeed: 12
-  _maxWallRunTime: 0
-  _wallRunGravity: 2
-  _minimumWallRunSpeed: 3
-  _wallRunCooldown: 0.15
-  _maximumWallAngle: 15
-  _forwardWallCheckAngle: 35
-  _backwardWallCheckAngle: 35
-  _maxWallRunCameraTilt: 0
-  _wallRunCameraTiltSpeed: 180
+  controller: {fileID: 2099846650}
+  orientation: {fileID: 259178964}
+  walkSpeed: 8
+  sprintSpeed: 12
+  crouchSpeed: 6
+  airControl: 12
+  gravity: -14
+  jumpHeight: 5
+  wallJumpHeight: 6
+  wallJumpForce: 16
+  wallJumpForwardForce: 7
+  maxFallSpeed: -30
+  standingHeight: 3.4
+  crouchingHeight: 1.6
+  wallCheckDistance: 1.5
+  wallCheckRadius: 0.25
+  wallRunSpeed: 12
+  maxWallRunTime: 1.5
+  wallRunGravity: 2
+  wallRunCooldown: 0.15
+  wallJumpDetachTime: 0.5
+  minimumWallAngle: 60
+  wallRunStickForce: 1.5
+  minimumWallJumpSpeed: 1
+  wallJumpForwardControl: 0.35
+  maxWallRunCameraTilt: 10
+  cameraTiltSpeed: 120
 --- !u!4 &562177860
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,7 +4389,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 488.30386, y: 100.34505, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4763,7 +4759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 606769931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Buidling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5369,7 +5365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704976454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DoorPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5986,7 +5982,7 @@ GameObject:
   - component: {fileID: 824919573}
   - component: {fileID: 824919572}
   - component: {fileID: 824919571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6281,7 +6277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875811314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6541,7 +6537,7 @@ GameObject:
   - component: {fileID: 937942613}
   - component: {fileID: 937942612}
   - component: {fileID: 937942611}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Stairs (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6678,7 +6674,7 @@ GameObject:
   - component: {fileID: 949437078}
   - component: {fileID: 949437077}
   - component: {fileID: 949437076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Ladder
   m_Icon: {fileID: 0}
@@ -6792,7 +6788,7 @@ GameObject:
   - component: {fileID: 958078682}
   - component: {fileID: 958078681}
   - component: {fileID: 958078680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6932,7 +6928,7 @@ GameObject:
   - component: {fileID: 959554673}
   - component: {fileID: 959554672}
   - component: {fileID: 959554671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7325,7 +7321,7 @@ GameObject:
   - component: {fileID: 991580416}
   - component: {fileID: 991580415}
   - component: {fileID: 991580414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7574,7 +7570,7 @@ GameObject:
   - component: {fileID: 1023938920}
   - component: {fileID: 1023938922}
   - component: {fileID: 1023938921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7760,7 +7756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098337050}
   - component: {fileID: 1098337049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7819,7 +7815,7 @@ GameObject:
   - component: {fileID: 1136839198}
   - component: {fileID: 1136839197}
   - component: {fileID: 1136839196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8229,7 +8225,7 @@ GameObject:
   - component: {fileID: 1179430408}
   - component: {fileID: 1179430407}
   - component: {fileID: 1179430406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: er (7)
   m_TagString: DeadZone
   m_Icon: {fileID: 0}
@@ -8631,7 +8627,7 @@ GameObject:
   - component: {fileID: 1227470962}
   - component: {fileID: 1227470961}
   - component: {fileID: 1227470960}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8923,7 +8919,7 @@ GameObject:
   - component: {fileID: 1278436170}
   - component: {fileID: 1278436169}
   - component: {fileID: 1278436168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9058,7 +9054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1281875980}
   - component: {fileID: 1281875981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9265,7 +9261,7 @@ GameObject:
   - component: {fileID: 1317073875}
   - component: {fileID: 1317073874}
   - component: {fileID: 1317073873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9770,7 +9766,7 @@ GameObject:
   - component: {fileID: 1397972543}
   - component: {fileID: 1397972542}
   - component: {fileID: 1397972541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10102,10 +10098,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff080d3d810dbfe4e8e9cd46029debd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  _mouseSensitivity: 100
-  _playerBody: {fileID: 2099846653}
-  _orientation: {fileID: 259178964}
-  _playerMovement: {fileID: 562177859}
+  mouseSensitivity: 75
+  playerBody: {fileID: 2099846653}
+  orientation: {fileID: 259178964}
+  playerMovement: {fileID: 562177859}
 --- !u!4 &1541190616
 Transform:
   m_ObjectHideFlags: 0
@@ -10311,7 +10307,7 @@ GameObject:
   - component: {fileID: 1614348548}
   - component: {fileID: 1614348547}
   - component: {fileID: 1614348546}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10766,7 +10762,7 @@ GameObject:
   - component: {fileID: 1647937929}
   - component: {fileID: 1647937928}
   - component: {fileID: 1647937927}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10877,7 +10873,7 @@ GameObject:
   - component: {fileID: 1667904137}
   - component: {fileID: 1667904139}
   - component: {fileID: 1667904138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11286,7 +11282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754276245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11461,7 +11457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1786148059}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11726,7 +11722,7 @@ GameObject:
   - component: {fileID: 1853016453}
   - component: {fileID: 1853016452}
   - component: {fileID: 1853016451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stairs (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11865,7 +11861,7 @@ GameObject:
   - component: {fileID: 1866773705}
   - component: {fileID: 1866773704}
   - component: {fileID: 1866773703}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12536,7 +12532,7 @@ GameObject:
   - component: {fileID: 1938299427}
   - component: {fileID: 1938299426}
   - component: {fileID: 1938299425}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: er (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12650,7 +12646,7 @@ GameObject:
   - component: {fileID: 1986489163}
   - component: {fileID: 1986489162}
   - component: {fileID: 1986489161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12787,7 +12783,7 @@ GameObject:
   - component: {fileID: 2050228774}
   - component: {fileID: 2050228773}
   - component: {fileID: 2050228772}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13130,7 +13126,7 @@ GameObject:
   - component: {fileID: 2116777345}
   - component: {fileID: 2116777344}
   - component: {fileID: 2116777343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
