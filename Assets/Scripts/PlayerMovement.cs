@@ -304,12 +304,6 @@ public class PlayerMovement:MonoBehaviour
         {
             if(currentSpeed>speed)
             {
-                // FIX: steer toward the input direction while decelerating to
-                // the target speed, instead of decelerating toward whatever
-                // direction we already happened to be moving in. This is what
-                // caused movement to feel "locked" in one direction whenever
-                // your current speed was above the target speed (e.g. right
-                // after crouching while sprinting).
                 Vector3 targetVelocity=inputDirection*speed;
 
                 horizontalVelocity=Vector3.MoveTowards(
@@ -713,15 +707,6 @@ public class PlayerMovement:MonoBehaviour
     private bool IsStuck(out Collider[] overlaps)
     {
         Vector3 worldCenter=transform.position+controller.center;
-        // FIX: Unity's CharacterController intentionally keeps a small
-        // resting overlap with the ground equal to skinWidth - that's how
-        // isGrounded stays reliable, it's not "stuck". If our tolerance
-        // (stuckCheckSkin) was smaller than the controller's actual
-        // skinWidth, we'd treat that completely normal contact as stuck and
-        // push you out, then gravity/grounding puts you right back into the
-        // same normal overlap next frame - a permanent tiny fight that looks
-        // like sinking/jittering into the ground. Always use whichever
-        // margin is bigger, with headroom above skinWidth.
         float skin=Mathf.Max(stuckCheckSkin,controller.skinWidth*1.5f);
         float radius=Mathf.Max(controller.radius-skin,0.01f);
         float outerHalfExtent=Mathf.Max(controller.height*0.5f-skin,radius);
@@ -730,10 +715,6 @@ public class PlayerMovement:MonoBehaviour
         Vector3 bottom=worldCenter+Vector3.down*halfHeight;
         Vector3 top=worldCenter+Vector3.up*halfHeight;
 
-        // FIX: check every layer and filter out only OUR OWN colliders by
-        // reference, instead of masking out the player's whole layer - which
-        // would hide real geometry sharing that layer and let you sit
-        // overlapped without ever detecting it.
         Collider[] raw=Physics.OverlapCapsule(bottom,top,radius,Physics.AllLayers,QueryTriggerInteraction.Ignore);
 
         System.Collections.Generic.List<Collider> filtered=new System.Collections.Generic.List<Collider>(raw.Length);
@@ -768,9 +749,6 @@ public class PlayerMovement:MonoBehaviour
 
     private void SyncStuckProbe()
     {
-        // FULL SIZE - this must exactly match the real CharacterController
-        // capsule, or ComputePenetration resolves the wrong (smaller) shape
-        // and leaves your actual capsule still overlapping.
         stuckProbe.radius=controller.radius;
         stuckProbe.height=controller.height;
         stuckProbe.center=controller.center;
@@ -815,13 +793,7 @@ public class PlayerMovement:MonoBehaviour
             if(totalPush.magnitude>maxUnstuckPushPerFrame)
                 totalPush=totalPush.normalized*maxUnstuckPushPerFrame;
 
-            // FIX: controller.Move() runs its own sweep/collision check on
-            // whatever you pass it - for a small precise depenetration
-            // vector (often smaller than skin width) it can decide the path
-            // is "blocked" and barely move you, even though the destination
-            // is the correct, non-overlapping position. Set the transform
-            // directly for this correction instead, bypassing the
-            // controller's own collision resolution entirely.
+            // Direct depenetration correction.
             transform.position+=totalPush;
         }
     }
@@ -1148,10 +1120,6 @@ public class PlayerMovement:MonoBehaviour
             return;
         }
 
-        // FIX: refresh air dashes on ANY collision contact - walls, ceilings,
-        // props - not just the ground. CheckGround() already resets this on
-        // ground contact via controller.isGrounded; this covers everything
-        // else the controller physically touches.
         airDashesUsed=0;
     }
 
@@ -1184,11 +1152,7 @@ public class PlayerMovement:MonoBehaviour
         Gizmos.DrawLine(origin,origin+(right-forward).normalized*wallCheckDistance);
         Gizmos.DrawLine(origin,origin+(-right-forward).normalized*wallCheckDistance);
 
-        // DEBUG: draws the exact capsule CanStandAt() tests for each height,
-        // green if clear / red if blocked, PLUS your actual current capsule
-        // in cyan. Only reliable in Play Mode (needs a real ground contact
-        // point). Compare these against your real ceiling collider (not
-        // just its visual mesh) to see exactly what's being detected.
+        // Debug wall and capsule checks.
         if(Application.isPlaying)
         {
             DrawStandCheckGizmo(slideHeight,new Color(1f,0.5f,0f));
