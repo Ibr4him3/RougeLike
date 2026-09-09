@@ -7,6 +7,7 @@ public class MouseLook:MonoBehaviour
     [SerializeField]private Transform playerBody;
     [SerializeField]private Transform orientation;
     [SerializeField]private PlayerMovement playerMovement;
+    [SerializeField]private float cameraTiltSpeed=10f;
 
     private float xRotation;
     private float currentTilt;
@@ -33,23 +34,25 @@ public class MouseLook:MonoBehaviour
 
         HandleCameraTilt();
 
-        transform.localRotation=Quaternion.Euler(
-            xRotation,
-            0f,
-            currentTilt
-        );
+        transform.localRotation=Quaternion.Euler(xRotation,0f,currentTilt);
     }
 
     private void HandleCameraTilt()
     {
-        float targetTilt=playerMovement.IsWallRunning
-            ?playerMovement.WallRunCameraTilt
-            :0f;
+        float targetTilt=0f;
+
+        if(playerMovement!=null&&playerMovement.IsWallRunning)
+        {
+            if(playerMovement.IsWallRight)
+                targetTilt=playerMovement.MaxWallRunCameraTilt;
+            else if(playerMovement.IsWallLeft)
+                targetTilt=-playerMovement.MaxWallRunCameraTilt;
+        }
 
         currentTilt=Mathf.Lerp(
             currentTilt,
             targetTilt,
-            10f*Time.deltaTime
+            cameraTiltSpeed*Time.deltaTime
         );
     }
 }
